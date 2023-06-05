@@ -125,7 +125,7 @@ const UploadModal = () => {
           id="author"
           disabled={isLoading}
           {...register("author", { required: true })}
-          placeholder="Auteur.rice"
+          placeholder="Artiste"
         />
         <div>
           <div className="pb-1">Sélectionner un fichier</div>
