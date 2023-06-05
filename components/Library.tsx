@@ -28,7 +28,7 @@ const Library: React.FC<LibraryProps> = ({songs}) => {
       <div className="flex items-center justify-between px-5 pt-4">
         <div className="inline-flex items-center gap-x-2">
           <TbPlaylist className="text-neutral-400" size={26}/>
-          <p className="text-neutral-400 font-medium text-md">Vos playlists</p>
+          <p className="text-neutral-400 font-medium text-md">Votre Bibliotèque</p>
         </div>
         <AiOutlinePlus onClick= {onClick}  className="text-neutral-400 cursor-pointer hover:text-white transition" size={20}/>
       </div>
