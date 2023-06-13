@@ -22,24 +22,25 @@ export interface UserDetails {
 export interface Product {
     id: string;
     active?: boolean;
-    name: string;
+    name?: string;
     description?: string;
     metadata?: Stripe.Metadata;
-    images?: string;
+    image?: string;
 }
 
 export interface Price {
     id: string;
     product_id?: string;
     active?: boolean;
-    unit_amount: number;
+    unit_amount?: number;
     description?: string;
-    currency: string;
+    currency?: string;
     type?: Stripe.Price.Type;
     interval?: Stripe.Price.Recurring.Interval;
     interval_count?: number;
     trial_period_days?: number | null;
     products?: Product;
+    metadata?: Stripe.Metadata;
 }
 
 export interface Subscription {
